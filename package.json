@@ -1,0 +1,17 @@
+{
+  "name": "openapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "server:mock": "prism mock ./apigen/openapi.yaml -p 8080",
+    "apigen": "openapi-typescript apigen/openapi.yaml --output ./lib/schema.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@stoplight/prism-cli": "^4.8.0",
+    "openapi-typescript": "^5.2.0"
+  }
+}
